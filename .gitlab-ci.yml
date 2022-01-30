@@ -30,5 +30,6 @@ Deploy:
   only:
     - master
   script:
+    - npm build
     - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
     - npm publish
