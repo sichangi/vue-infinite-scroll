@@ -1,4 +1,4 @@
-import infiniteScroll from './../../vue-infinite-scroll';
+import infiniteScroll from './../../infinite-scroll';
 import Vue from 'vue';
 
 const scrollToBottom = (targetElement, distance = 0) => {
@@ -17,7 +17,7 @@ const scrollToTop = (targetElement) => {
 };
 const createVM = (targetElement = 'window', distance = 0, immediate = true) => {
   let template;
-  switch(targetElement) {
+  switch (targetElement) {
     case 'window':
       template = `<div class="app"
                     style="height: 1200px; width: 400px; background-color: #000"
@@ -29,7 +29,7 @@ const createVM = (targetElement = 'window', distance = 0, immediate = true) => {
                   </div>`;
       break;
     case 'parentNode':
-    template = `<div class="app"
+      template = `<div class="app"
                   style="height: 600px; width: 400px; overflow: auto; background-color: #eee;">
                   <div style="height: 1200px; width: 400px;"
                     v-infinite-scroll="loadMore()"
@@ -42,7 +42,7 @@ const createVM = (targetElement = 'window', distance = 0, immediate = true) => {
       break;
     case 'currentNode':
     default:
-    template = `<div class="app"
+      template = `<div class="app"
                   style="height: 600px; width: 400px; background-color: #ccc; overflow: auto;"
                   v-infinite-scroll="loadMore()"
                   infinite-scroll-disabled="busy"
@@ -99,7 +99,7 @@ scrollTargetElements.forEach(targetElement => {
   describe(`${targetElement} scroll test`, () => {
     let vm;
 
-    beforeEach(done =>{
+    beforeEach(done => {
       vm = createVM(targetElement);
 
       vm.$nextTick(() => {

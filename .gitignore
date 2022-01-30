@@ -3,5 +3,5 @@ node_modules
 coverage
 .idea
 .jshintrc
-vue-infinite-scroll.js
+infinite-scroll.js
 *.log

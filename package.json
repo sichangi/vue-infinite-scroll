@@ -1,8 +1,8 @@
 {
-  "name": "vue-infinite-scroll",
+  "name": "@stead/infinite-scroll",
   "version": "2.0.2",
   "description": "An infinite scroll directive for vue.js.",
-  "main": "vue-infinite-scroll.js",
+  "main": "infinite-scroll.js",
   "jsnext:main": "./src/index.js",
   "scripts": {
     "test": "npm run build && xo src/**/* && karma start",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ElemeFE/vue-infinite-scroll.git"
+    "url": "https://github.com/ElemeFE/infinite-scroll.git"
   },
   "keywords": [
     "infinite-scroll",
@@ -40,5 +40,8 @@
       "browser"
     ],
     "space": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,11 +1,11 @@
-# vue-infinite-scroll
+# infinite-scroll
 
-vue-infinite-scroll is an infinite scroll directive for vue.js.
+infinite-scroll is an infinite scroll directive for vue.js.
 
 # Install
 
 ```Bash
-npm install vue-infinite-scroll --save
+npm install infinite-scroll --save
 ```
 
 ### CommonJS
@@ -14,11 +14,11 @@ You can use any build tool which supports `commonjs`:
 
 ```JavaScript
 // register globally
-var infiniteScroll =  require('vue-infinite-scroll');
+var infiniteScroll =  require('infinite-scroll');
 Vue.use(infiniteScroll)
 
 // or for a single instance
-var infiniteScroll = require('vue-infinite-scroll');
+var infiniteScroll = require('infinite-scroll');
 new Vue({
   directives: {infiniteScroll}
 })
@@ -29,11 +29,11 @@ Or in ES2015:
 
 ```JavaScript
 // register globally
-import infiniteScroll from 'vue-infinite-scroll'
+import infiniteScroll from 'infinite-scroll'
 Vue.use(infiniteScroll)
 
 // or for a single instance
-import infiniteScroll from 'vue-infinite-scroll'
+import infiniteScroll from 'infinite-scroll'
 new Vue({
   directives: {infiniteScroll}
 })
@@ -42,10 +42,10 @@ new Vue({
 
 ### Direct include
 
-You can use the CDN: https://unpkg.com/vue-infinite-scroll, `infiniteScroll` is exposed to `window` and will automatically install itself. Also you can use your local copy:
+You can use the CDN: https://unpkg.com/infinite-scroll, `infiniteScroll` is exposed to `window` and will automatically install itself. Also you can use your local copy:
 
 ```HTML
-<script src="../node_modules/vue-infinite-scroll/vue-infinite-scroll.js"></script>
+<script src="../node_modules/infinite-scroll/infinite-scroll.js"></script>
 ```
 
 ## Usage

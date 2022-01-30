@@ -1,12 +1,12 @@
 {
-  "name": "vue-infinite-scroll",
+  "name": "infinite-scroll",
   "description": "An infinite scroll directive for vue.js.",
   "keywords": [
     "infinite-scroll",
     "vue"
   ],
   "main": [
-    "vue-infinite-scroll.js"
+    "infinite-scroll.js"
   ],
   "dependencies": {
     "vue": "~1.0.10"
@@ -30,7 +30,7 @@
   "authors": "long.zhang@ele.me",
   "repository": {
   "type": "git",
-  "url": "https://github.com/ElemeFE/vue-infinite-scroll.git"
+  "url": "https://github.com/ElemeFE/infinite-scroll.git"
   },
   "license": "MIT",
   "ignore": [

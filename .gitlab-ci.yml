@@ -1,0 +1,34 @@
+image: node:10.20.1-alpine
+
+cache:
+  key: modules
+  paths:
+    - node_modules/
+
+stages:
+#  - test
+  - deploy
+
+.Test:
+  stage: test
+  variables:
+    ENV: "CI"
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /skip-test/
+  before_script:
+    - yarn install
+  script:
+    - yarn test
+
+Deploy:
+  stage: deploy
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /skip-deploy/
+  cache: {}
+  only:
+    - master
+  script:
+    - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+    - npm publish
