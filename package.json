@@ -1,6 +1,6 @@
 {
   "name": "@stead/infinite-scroll",
-  "version": "2.0.2",
+  "version": "2.0.0",
   "description": "An infinite scroll directive for vue.js.",
   "main": "infinite-scroll.js",
   "jsnext:main": "./src/index.js",
